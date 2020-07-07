@@ -88,6 +88,33 @@ namespace TeredoTool.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a sc config iphlpsvc start= auto.
+        /// </summary>
+        internal static string IPHELPER_SET_AUTO {
+            get {
+                return ResourceManager.GetString("IPHELPER_SET_AUTO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a net start iphlpsvc.
+        /// </summary>
+        internal static string IPHELPER_START {
+            get {
+                return ResourceManager.GetString("IPHELPER_START", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a net stop iphlpsvc.
+        /// </summary>
+        internal static string IPHELPER_STOP {
+            get {
+                return ResourceManager.GetString("IPHELPER_STOP", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a C:\Windows\System32\drivers\etc\hosts.
         /// </summary>
         internal static string PATH_HOSTS {

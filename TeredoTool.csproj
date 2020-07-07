@@ -54,7 +54,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="src\Manager.cs" />
-    <Compile Include="src\ProcessMachine.cs" />
+    <Compile Include="src\ProcessLauncher.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

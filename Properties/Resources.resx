@@ -126,6 +126,15 @@
   <data name="COMMAND_IPCONFIG" xml:space="preserve">
     <value>ipconfig</value>
   </data>
+  <data name="IPHELPER_SET_AUTO" xml:space="preserve">
+    <value>sc config iphlpsvc start= auto</value>
+  </data>
+  <data name="IPHELPER_START" xml:space="preserve">
+    <value>net start iphlpsvc</value>
+  </data>
+  <data name="IPHELPER_STOP" xml:space="preserve">
+    <value>net stop iphlpsvc</value>
+  </data>
   <data name="PATH_HOSTS" xml:space="preserve">
     <value>C:\Windows\System32\drivers\etc\hosts</value>
   </data>
