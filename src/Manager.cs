@@ -19,8 +19,18 @@ namespace TeredoTool
             //Teredo state
             CheckTeredoState();
 
-            //TODO: Check TCP/IP v6 protocol
+            //Check TCP/IP v6 protocol
+            ReEnableIpV6OnAllInterfaces();
+
             //TODO: Enable Teredo in the registry
+        }
+
+        /// <summary>
+        /// Re-enable IpV6 on all interfaces
+        /// </summary>
+        private static void ReEnableIpV6OnAllInterfaces()
+        {
+            processLauncher.Start(resources.GetString("POWERSHELL_START"), resources.GetString("POWERSHELL_ENABLE_IPV6_ALL_INTERFACES"));
         }
 
         /// <summary>

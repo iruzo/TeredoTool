@@ -61,15 +61,6 @@ namespace TeredoTool.Properties {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        internal static string CMD_RUN_IPV6_RESTART {
-            get {
-                return ResourceManager.GetString("CMD_RUN_IPV6_RESTART", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Busca una cadena traducida similar a Cmd.exe.
         /// </summary>
         internal static string CMD_START {
@@ -120,6 +111,24 @@ namespace TeredoTool.Properties {
         internal static string PATH_HOSTS {
             get {
                 return ResourceManager.GetString("PATH_HOSTS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Enable-NetAdapterBinding -Name &quot;*&quot; -ComponentID ms_tcpip6.
+        /// </summary>
+        internal static string POWERSHELL_ENABLE_IPV6_ALL_INTERFACES {
+            get {
+                return ResourceManager.GetString("POWERSHELL_ENABLE_IPV6_ALL_INTERFACES", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a powershell.exe.
+        /// </summary>
+        internal static string POWERSHELL_START {
+            get {
+                return ResourceManager.GetString("POWERSHELL_START", resourceCulture);
             }
         }
         

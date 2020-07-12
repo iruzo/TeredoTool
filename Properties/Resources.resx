@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CMD_RUN_IPV6_RESTART" xml:space="preserve">
-    <value />
-  </data>
   <data name="CMD_START" xml:space="preserve">
     <value>Cmd.exe</value>
   </data>
@@ -137,6 +134,12 @@
   </data>
   <data name="PATH_HOSTS" xml:space="preserve">
     <value>C:\Windows\System32\drivers\etc\hosts</value>
+  </data>
+  <data name="POWERSHELL_ENABLE_IPV6_ALL_INTERFACES" xml:space="preserve">
+    <value>Enable-NetAdapterBinding -Name "*" -ComponentID ms_tcpip6</value>
+  </data>
+  <data name="POWERSHELL_START" xml:space="preserve">
+    <value>powershell.exe</value>
   </data>
   <data name="SERVICE_IPHELPER_STATUS" xml:space="preserve">
     <value>sc query "iphlpsvc" | find "RUNNING"</value>
