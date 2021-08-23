@@ -151,6 +151,24 @@ namespace TeredoTool.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a reg add HKLMSystemCurrentControlSetServicesTcpip6Parameters / v DisabledComponents / t REG_DWORD / d 0x0.
+        /// </summary>
+        internal static string TEREDO_REGQUERY_ADD_CMD {
+            get {
+                return ResourceManager.GetString("TEREDO_REGQUERY_ADD_CMD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a reg query HKLM\System\CurrentControlSet\Services\iphlpsvc\Teredo.
+        /// </summary>
+        internal static string TEREDO_STATE_REGQUERY_CMD {
+            get {
+                return ResourceManager.GetString("TEREDO_STATE_REGQUERY_CMD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a netsh interface Teredo set state servername=default.
         /// </summary>
         internal static string TEREDO_STATE_SERVERNAME_RESET {

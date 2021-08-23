@@ -11,6 +11,7 @@ namespace TeredoTool
 
         static ResourceManager resources = Resources.ResourceManager;
         static ProcessLauncher processLauncher = new ProcessLauncher();
+
         public static void Run()
         {
             //Check IPHelper service
@@ -23,15 +24,9 @@ namespace TeredoTool
             ReEnableIpV6OnAllInterfaces();
 
             //TODO: Enable Teredo in the registry
+            RegistryQuery();
         }
 
-        /// <summary>
-        /// Re-enable IpV6 on all interfaces
-        /// </summary>
-        private static void ReEnableIpV6OnAllInterfaces()
-        {
-            processLauncher.Start(resources.GetString("POWERSHELL_START"), resources.GetString("POWERSHELL_ENABLE_IPV6_ALL_INTERFACES"));
-        }
 
         /// <summary>
         /// Restart IPHelper service and set auto start
@@ -42,6 +37,7 @@ namespace TeredoTool
             processLauncher.Start(resources.GetString("CMD_START"), resources.GetString("IPHELPER_START"));
             processLauncher.Start(resources.GetString("CMD_START"), resources.GetString("IPHELPER_SET_AUTO"));
         }
+
 
         /// <summary>
         /// Check and fix teredo state
@@ -65,7 +61,42 @@ namespace TeredoTool
             {
                 new ProcessLauncher().Start(resources.GetString("CMD_START"), resources.GetString("TEREDO_STATE_SERVERNAME_RESET"));
             }
+        }
 
+
+        /// <summary>
+        /// Re-enable IpV6 on all interfaces
+        /// </summary>
+        private static void ReEnableIpV6OnAllInterfaces()
+        {
+            processLauncher.Start(resources.GetString("POWERSHELL_START"), resources.GetString("POWERSHELL_ENABLE_IPV6_ALL_INTERFACES"));
+        }
+
+        /// <summary>
+        /// Check if Teredo is disabled in the Windows Registry
+        /// </summary>
+        private static void RegistryQuery()
+        {
+            try
+            {
+                if (processLauncher != null)
+                {
+                    string output = processLauncher.Start(resources.GetString("CMD_START"), resources.GetString("TEREDO_STATE_REGQUERY_CMD"));
+
+                    if (!string.IsNullOrEmpty(output) && output.Contains("DisabledComponents ") && output.Contains("0x8e"))
+                    {
+                        processLauncher.Start(resources.GetString("CMD_START"), resources.GetString("TEREDO_REGQUERY_ADD_CMD"));
+                    }
+                }
+            }
+            catch (System.ArgumentNullException)
+            {
+                throw;
+            }
+            catch (System.Exception)
+            {
+                throw;
+            }
         }
     }
-} 
+}

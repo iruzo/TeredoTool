@@ -30,7 +30,8 @@ namespace TeredoTool
                 if (!string.IsNullOrEmpty(arguments))
                     startInfo.Arguments = "/C " + arguments;
 
-                Process process = new Process {
+                Process process = new Process
+                {
                     StartInfo = startInfo
                 };
 
