@@ -7,3 +7,12 @@ D:\03_code\00_workspaces\01_visualstudio\visualstudio-workspace\TeredoTool\obj\D
 D:\03_code\00_workspaces\01_visualstudio\visualstudio-workspace\TeredoTool\obj\Debug\TeredoTool.csproj.CoreCompileInputs.cache
 D:\03_code\00_workspaces\01_visualstudio\visualstudio-workspace\TeredoTool\obj\Debug\TeredoTool.exe
 D:\03_code\00_workspaces\01_visualstudio\visualstudio-workspace\TeredoTool\obj\Debug\TeredoTool.pdb
+S:\source\AlfBeta\TeredoTool\bin\Debug\TeredoTool.exe.config
+S:\source\AlfBeta\TeredoTool\bin\Debug\TeredoTool.exe
+S:\source\AlfBeta\TeredoTool\bin\Debug\TeredoTool.pdb
+S:\source\AlfBeta\TeredoTool\obj\Debug\TeredoTool.csproj.AssemblyReference.cache
+S:\source\AlfBeta\TeredoTool\obj\Debug\TeredoTool.Properties.Resources.resources
+S:\source\AlfBeta\TeredoTool\obj\Debug\TeredoTool.csproj.GenerateResource.cache
+S:\source\AlfBeta\TeredoTool\obj\Debug\TeredoTool.csproj.CoreCompileInputs.cache
+S:\source\AlfBeta\TeredoTool\obj\Debug\TeredoTool.exe
+S:\source\AlfBeta\TeredoTool\obj\Debug\TeredoTool.pdb

@@ -147,6 +147,12 @@
   <data name="TEREDO_DISABLE" xml:space="preserve">
     <value>netsh interface Teredo set state disable</value>
   </data>
+  <data name="TEREDO_REGQUERY_ADD_CMD" xml:space="preserve">
+    <value>reg add HKLMSystemCurrentControlSetServicesTcpip6Parameters / v DisabledComponents / t REG_DWORD / d 0x0</value>
+  </data>
+  <data name="TEREDO_STATE_REGQUERY_CMD" xml:space="preserve">
+    <value>reg query HKLM\System\CurrentControlSet\Services\iphlpsvc\Teredo</value>
+  </data>
   <data name="TEREDO_STATE_SERVERNAME_RESET" xml:space="preserve">
     <value>netsh interface Teredo set state servername=default</value>
     <comment>default/teredo.remlab.net</comment>
